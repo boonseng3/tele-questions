@@ -57,4 +57,13 @@ public class Plan {
         result = 31 * result + Arrays.hashCode(features);
         return result;
     }
+
+    @Override
+    public String toString() {
+        return "Plan{" +
+                "name='" + name + '\'' +
+                ", cost=" + cost +
+                ", features=" + Arrays.toString(features) +
+                '}';
+    }
 }
