@@ -25,7 +25,7 @@ public class Combination {
                 int firstItem = n[i];
                 // assume first item, generate the combination (n without first item) choose r-1
                 int[] remainingItems = new int[n.length - 1];
-                System.arraycopy(n, i + 1, remainingItems, 0, n.length-1);
+                System.arraycopy(n, i + 1, remainingItems, 0, n.length - 1);
                 int[][] partialResult = combination(remainingItems, (r - 1));
 
                 // add first item to the partial result
